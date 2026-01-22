@@ -30,6 +30,7 @@ If you want to run multiple tests from different test classes or want to have a 
         </classes>
     </test>
 </suite>
+
 - This configuration will run all the tests in the classes LoginTests and AdminTests
 - Set Up TestNG Configuration in IntelliJ IDEA:
 - In IntelliJ, click on the Run/Debug Configurations button in the upper-right corner (this is the dropdown next to the green arrow).
