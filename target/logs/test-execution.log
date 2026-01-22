@@ -1,0 +1,13 @@
+2026-01-22 22:21:15 INFO  Utils - [TestNG] Running:
+  C:\Users\Аскат Наринбетов\AppData\Local\JetBrains\IntelliJIdea2023.3\temp-testng-customsuite.xml
+
+2026-01-22 22:21:15 INFO  WebDriverManager - Using chromedriver 143.0.7499.192 (resolved driver for Chrome 143)
+2026-01-22 22:21:15 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Аскат Наринбетов\.cache\selenium\chromedriver\win64\143.0.7499.192\chromedriver.exe
+2026-01-22 22:21:16 INFO  TestListener - START: TCLOGIN_002_invalidLogin
+2026-01-22 22:21:16 INFO  LoginPage - Open OrangeHRM login page
+2026-01-22 22:21:48 INFO  LoginPage - Type username
+2026-01-22 22:21:49 INFO  LoginPage - Type password
+2026-01-22 22:21:49 INFO  LoginPage - Click login
+2026-01-22 22:21:51 INFO  DashboardPage - Check if Dashboard page is displayed
+2026-01-22 22:22:01 INFO  TestListener - PASS: TCLOGIN_002_invalidLogin
+2026-01-22 22:22:01 INFO  TestListener - === TEST SUITE END: Askat_Narinbetov-testing5 ===
