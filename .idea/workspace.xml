@@ -4,26 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b646c235-e7ae-42b7-8975-0698b06f1f29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AdminTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Waits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing.xml" afterDir="false" />
+    <list default="true" id="b646c235-e7ae-42b7-8975-0698b06f1f29" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/listeners/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/listeners/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExtentTestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AdminTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdminTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/ScreenshotUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ScreenshotUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logs/test-execution.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logs/test-execution.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/TCADMIN_001_searchUserAdmin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/TCLOGIN_002_invalidLogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshots/TCLOGOUT_001_validLogout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +59,9 @@
     "TestNG.LoginTests.TCLOGIN_002_invalidLogin.executor": "Run",
     "TestNG.LoginTests.TCLOGOUT_001_validLogout.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
+    "TestNG.Testing admin with xml.executor": "Run",
+    "TestNG.Testing login with xml.executor": "Run",
+    "TestNG.testing.xml.executor": "Run",
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
@@ -80,7 +78,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTests.TCLOGIN_002_invalidLogin">
+  <component name="RunManager" selected="TestNG.Testing admin with xml">
     <configuration name="AdminTests.TCADMIN_001_searchUserAdmin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askat_Narinbetov-testing5" />
       <extension name="coverage">
@@ -119,16 +117,26 @@
     </configuration>
     <configuration name="LoginTests.TCLOGIN_002_invalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askat_Narinbetov-testing5" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
       <option name="METHOD_NAME" value="TCLOGIN_002_invalidLogin" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -153,11 +161,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testing admin with xml" type="TestNG">
+      <module name="Askat_Narinbetov-testing5" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testing login with xml" type="TestNG">
+      <module name="Askat_Narinbetov-testing5" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.Testing admin with xml" />
+      <item itemvalue="TestNG.Testing login with xml" />
+      <item itemvalue="TestNG.AdminTests.TCADMIN_001_searchUserAdmin" />
+      <item itemvalue="TestNG.LoginTests.TCLOGIN_001_validLogin" />
+      <item itemvalue="TestNG.LoginTests.TCLOGIN_002_invalidLogin" />
+      <item itemvalue="TestNG.LoginTests.TCLOGOUT_001_validLogout" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests.TCLOGIN_002_invalidLogin" />
         <item itemvalue="TestNG.LoginTests.TCLOGOUT_001_validLogout" />
         <item itemvalue="TestNG.AdminTests.TCADMIN_001_searchUserAdmin" />
+        <item itemvalue="TestNG.LoginTests.TCLOGIN_002_invalidLogin" />
         <item itemvalue="TestNG.LoginTests.TCLOGIN_001_validLogin" />
       </list>
     </recent_temporary>
@@ -175,12 +233,35 @@
       <workItem from="1768673268922" duration="3299000" />
       <workItem from="1768939354624" duration="605000" />
       <workItem from="1769089010764" duration="4437000" />
-      <workItem from="1769094908110" duration="6140000" />
+      <workItem from="1769094908110" duration="8034000" />
+      <workItem from="1769200536516" duration="1804000" />
+      <workItem from="1769224001762" duration="4606000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1769103249829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769103249829</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <option name="closed" value="true" />
+      <created>1769103262252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769103262252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

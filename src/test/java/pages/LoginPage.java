@@ -48,7 +48,5 @@ public class LoginPage {
         log.info("Check if Login page is displayed");
         return wait.until(ExpectedConditions.visibilityOfElementLocated(username)).isDisplayed();
     }
-//    public String getError() {
-//        return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMsg)).getText();
-//    }
+
 }

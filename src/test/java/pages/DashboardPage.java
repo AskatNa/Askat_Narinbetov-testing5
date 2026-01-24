@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
+import utils.ExtentTestManager;
 
 import java.time.Duration;
 
@@ -14,12 +15,14 @@ public class DashboardPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    private final By logoutButton = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a");
+    private final By userDropdownTab = By.cssSelector("span.oxd-userdropdown-tab");
+    private final By logoutButton = By.linkText("Logout");
     private final By dashboardHeader = By.xpath("//h6[text()='Dashboard']");
+    private final By dropdownMenu = By.cssSelector("ul.oxd-dropdown-menu");
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
     public boolean isDisplayed() {
@@ -30,12 +33,20 @@ public class DashboardPage {
     public void logout() {
         log.info("Click on Logout button");
 
-        WebElement logoutBtn = wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
+        try {
+            WebElement userDropdownTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(userDropdownTab));
+            userDropdownTabElement.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(dropdownMenu));
+            WebElement logoutBtn = wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
 
-        wait.until(ExpectedConditions.visibilityOf(logoutBtn));
+            logoutBtn.click();
+            log.info("Logout successful");
 
-        logoutBtn.click();
+            ExtentTestManager.getTest().info("Logout button clicked");
+
+        } catch (TimeoutException e) {
+            log.error("Logout button or user dropdown was not found in time", e);
+            throw e;
+        }
     }
-
-
 }

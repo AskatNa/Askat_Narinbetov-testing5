@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
 import utils.ExtentTestManager;
+import utils.ScreenshotUtil;
+
 
 @Listeners(TestListener.class)
 public class LoginTests extends BaseTest {
@@ -20,12 +22,13 @@ public class LoginTests extends BaseTest {
 
         login.login("Admin", "admin123");
         ExtentTestManager.getTest().info("Step 2: Enter valid username and password");
+
         try {
-            Thread.sleep(2000);  // 2 секунды
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        ScreenshotUtil.capture(driver, "validLogin");
         DashboardPage dashboard = new DashboardPage(driver);
         Assert.assertTrue(dashboard.isDisplayed(), "Dashboard should be visible after login");
         ExtentTestManager.getTest().info("Step 3: Verify dashboard page is displayed");
@@ -38,8 +41,10 @@ public class LoginTests extends BaseTest {
             login.open();
             ExtentTestManager.getTest().info("Step 1: Open OrangeHRM login page");
 
-            login.login("Admin", "admin123");
+            login.login("Admin", "wrongpass");
             ExtentTestManager.getTest().info("Step 2: Enter valid username and password");
+
+            ScreenshotUtil.capture(driver, "invalidLogin");
 
             DashboardPage dashboard = new DashboardPage(driver);
             if (!dashboard.isDisplayed()) {
@@ -57,22 +62,32 @@ public class LoginTests extends BaseTest {
         LoginPage login = new LoginPage(driver);
         login.open();
         login.login("Admin", "admin123");
+
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        ExtentTestManager.getTest().info("Step 1: Open OrangeHRM login page");
+
+        ScreenshotUtil.capture(driver, "loggedIn");
+
         DashboardPage dashboard = new DashboardPage(driver);
         Assert.assertTrue(dashboard.isDisplayed(), "Dashboard should be visible after login");
+        ExtentTestManager.getTest().info("Step 3: Dashboard is displayed");
 
         dashboard.logout();
-
+        ExtentTestManager.getTest().info("Step 4: Logout performed");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        ScreenshotUtil.capture(driver, "loggedOut");
 
         Assert.assertTrue(login.isDisplayed(), "Login page should be displayed after logout");
+        ExtentTestManager.getTest().pass("Logout test passed");
     }
+
+
 }
