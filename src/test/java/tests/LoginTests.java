@@ -75,7 +75,6 @@ public class LoginTests extends BaseTest {
         DashboardPage dashboard = new DashboardPage(driver);
         Assert.assertTrue(dashboard.isDisplayed(), "Dashboard should be visible after login");
         ExtentTestManager.getTest().info("Step 3: Dashboard is displayed");
-
         dashboard.logout();
         ExtentTestManager.getTest().info("Step 4: Logout performed");
         try {

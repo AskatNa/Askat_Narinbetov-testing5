@@ -37,7 +37,6 @@ public class AdminTests extends BaseTest {
             e.printStackTrace();
         }
         ScreenshotUtil.capture(driver, "DasboardSeen");
-
         AdminPage admin = new AdminPage(driver);
         admin.openAdminModule();
         ExtentTestManager.getTest().info("Step 4: Open Admin module");

@@ -43,7 +43,6 @@ public class DashboardPage {
             log.info("Logout successful");
 
             ExtentTestManager.getTest().info("Logout button clicked");
-
         } catch (TimeoutException e) {
             log.error("Logout button or user dropdown was not found in time", e);
             throw e;

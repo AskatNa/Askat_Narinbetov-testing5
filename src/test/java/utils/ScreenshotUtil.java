@@ -25,7 +25,6 @@ public class ScreenshotUtil {
                     Thread.sleep(2000);
                 }
             }
-
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             Path dest = Path.of("target", "screenshots", testName + ".png");
             Files.createDirectories(dest.getParent());

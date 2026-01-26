@@ -43,7 +43,6 @@ public class AdminPage {
         searchButton.click();
     }
 
-
     public boolean isResultDisplayed() {
         log.info("Check search results");
 

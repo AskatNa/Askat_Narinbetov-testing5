@@ -44,6 +44,7 @@ public class LoginPage {
             e.printStackTrace();
         }
     }
+
     public boolean isDisplayed() {
         log.info("Check if Login page is displayed");
         return wait.until(ExpectedConditions.visibilityOfElementLocated(username)).isDisplayed();

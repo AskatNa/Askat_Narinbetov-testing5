@@ -6,19 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b646c235-e7ae-42b7-8975-0698b06f1f29" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AdminTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdminTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ScreenshotUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ScreenshotUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/extent-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logs/test-execution.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logs/test-execution.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/screenshots/TCADMIN_001_searchUserAdmin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/screenshots/TCLOGIN_002_invalidLogin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/screenshots/TCLOGOUT_001_validLogout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/DashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AdminTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AdminTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/ScreenshotUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/ScreenshotUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Testing admin with xml">
+  <component name="RunManager" selected="TestNG.Testing login with xml">
     <configuration name="AdminTests.TCADMIN_001_searchUserAdmin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askat_Narinbetov-testing5" />
       <extension name="coverage">
@@ -235,7 +226,7 @@
       <workItem from="1769089010764" duration="4437000" />
       <workItem from="1769094908110" duration="8034000" />
       <workItem from="1769200536516" duration="1804000" />
-      <workItem from="1769224001762" duration="4606000" />
+      <workItem from="1769224001762" duration="5509000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -253,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769103262252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <option name="closed" value="true" />
+      <created>1769228852722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769228852722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
